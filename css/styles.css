@@ -1,0 +1,125 @@
+/* Google fonts: Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+
+:root {
+    --bg-color: #1E1D2F;
+    --second-bg-color: #2D2B43;
+    --text-color: #F8F8F8;
+    --main-color: #1ABC9C;
+    --btn-hover-color: #1abc9c73;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    transition: all ease 0.5s;
+}
+
+body {
+    background-color: var(--second-bg-color);
+}
+
+/* changes the selected text color and bg color */
+::selection {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+  }
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 2rem;
+    margin: 0.5rem;
+    padding: 2rem;
+    background-color: var(--bg-color);
+}
+
+.card-body h1 {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.card-body input {
+    border: none;
+    outline: none;
+    background: var(--second-bg-color);
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.card-body input:active,
+.card-body input:focus {
+    color: var(--text-color);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: var(--second-bg-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.card-body input::placeholder {
+    color: var(--text-color);
+    opacity: 50%;
+    font-weight: 600;
+}
+
+.btn-search,
+.btn-search:active,
+.btn-search:focus {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.btn-search:hover {
+    background-color: #1abc9c73;
+    color: var(--text-color);
+    transition: all ease 0.5s;
+}
+
+.card-footer {
+    border: none;
+}
+
+.card-footer button {
+    border: none;
+    cursor: pointer;
+    padding: 0px 6px;
+    border-radius: 6px;
+    background-color: var(--second-bg-color);
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.card-footer button:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    transition: all ease 0.5s;
+}
+
+.result-example p {
+    background-color: var(--second-bg-color);
+    font-style: italic;
+    border-left: 6px solid var(--main-color);
+    padding-left: 30px;
+}
+
+.footer {
+    background-color: var(--second-bg-color);
+}
+
+.footer small {
+    color: var(--main-color);
+    font-weight: 600;
+}
